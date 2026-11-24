@@ -213,8 +213,8 @@ html:not([lang="en"]) .nav-links a { padding-inline: 9px; }
 .watching { margin: 0; padding: 4px 12px; border: 1px solid rgba(255, 255, 255, .3); border-radius: 999px; background: rgba(255, 255, 255, .12); color: #fff; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .watching[hidden] { display: none; }
 .hero-ctas { display: flex; flex-wrap: wrap; gap: 10px; }
-.follow-x, .star-gh { display: inline-flex; align-items: center; gap: 10px; padding: 3px 18px 3px 3px; border: 2px solid transparent; border-radius: 999px; color: #fff; font-size: 14.5px; font-weight: 700; line-height: 1; text-decoration: none; white-space: nowrap; transition: transform .15s, border-color .15s, box-shadow .15s; }
-.follow-x svg, .star-gh svg { width: 30px; height: 30px; flex: none; }
+.follow-x, .star-gh, .show-trmnl { display: inline-flex; align-items: center; gap: 10px; padding: 3px 18px 3px 3px; border: 2px solid transparent; border-radius: 999px; color: #fff; font-size: 14.5px; font-weight: 700; line-height: 1; text-decoration: none; white-space: nowrap; transition: transform .15s, border-color .15s, box-shadow .15s; }
+.follow-x svg, .star-gh svg, .show-trmnl svg { width: 30px; height: 30px; flex: none; }
 .follow-x { background: linear-gradient(#000, #000) padding-box, var(--grad) border-box; box-shadow: 0 6px 22px rgba(255, 46, 126, .4); }
 .follow-x svg { padding: 6px; border-radius: 50%; background: #fff; fill: #000; }
 .follow-x:hover { box-shadow: 0 10px 30px rgba(255, 46, 126, .65); }
@@ -222,13 +222,16 @@ html:not([lang="en"]) .nav-links a { padding-inline: 9px; }
 .star-gh svg { fill: #fff; }
 .star-gh .star { width: 15px; height: 15px; fill: var(--gold); }
 .star-gh:hover { border-color: var(--gold); box-shadow: 0 6px 22px rgba(255, 194, 77, .4); }
-.follow-x:hover, .star-gh:hover { transform: translateY(-2px); }
-.follow-x:active, .star-gh:active { transform: none; }
-.follow-x:focus-visible, .star-gh:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 999px; }
+.show-trmnl { gap: 9px; padding-right: 15px; border-color: rgba(255, 255, 255, .4); background: rgba(13, 17, 23, .72); }
+.show-trmnl svg { padding: 4px; fill: #fff; }
+.show-trmnl:hover { border-color: #F8654B; box-shadow: 0 6px 22px rgba(248, 101, 75, .4); }
+.follow-x:hover, .star-gh:hover, .show-trmnl:hover { transform: translateY(-2px); }
+.follow-x:active, .star-gh:active, .show-trmnl:active { transform: none; }
+.follow-x:focus-visible, .star-gh:focus-visible, .show-trmnl:focus-visible { outline: 3px solid #fff; outline-offset: 3px; border-radius: 999px; }
 @media (max-width: 520px) {
   .hero-ctas { gap: 8px; }
-  .follow-x, .star-gh { gap: 7px; padding-right: 11px; font-size: 13.5px; }
-  .follow-x svg, .star-gh svg:not(.star) { width: 28px; height: 28px; }
+  .follow-x, .star-gh, .show-trmnl { gap: 7px; padding-right: 11px; font-size: 13.5px; }
+  .follow-x svg, .star-gh svg:not(.star), .show-trmnl svg { width: 28px; height: 28px; }
 }
 .live-dot { width: 9px; height: 9px; border-radius: 50%; background: #ff4d8d; box-shadow: 0 0 0 0 rgba(255, 77, 141, .7); animation: pulse 2s infinite; }
 @keyframes pulse { 0% { box-shadow: 0 0 0 0 rgba(255, 77, 141, .65); } 70% { box-shadow: 0 0 0 10px rgba(255, 77, 141, 0); } 100% { box-shadow: 0 0 0 0 rgba(255, 77, 141, 0); } }
