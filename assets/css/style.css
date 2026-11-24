@@ -223,7 +223,7 @@ html:not([lang="en"]) .nav-links a { padding-inline: 9px; }
 .star-gh .star { width: 15px; height: 15px; fill: var(--gold); }
 .star-gh:hover { border-color: var(--gold); box-shadow: 0 6px 22px rgba(255, 194, 77, .4); }
 .show-trmnl { gap: 9px; padding-right: 15px; border-color: rgba(255, 255, 255, .4); background: rgba(13, 17, 23, .72); }
-.show-trmnl svg { padding: 4px; fill: #fff; }
+.show-trmnl svg { padding: 3px; fill: #fff; }
 .show-trmnl:hover { border-color: #F8654B; box-shadow: 0 6px 22px rgba(248, 101, 75, .4); }
 .follow-x:hover, .star-gh:hover, .show-trmnl:hover { transform: translateY(-2px); }
 .follow-x:active, .star-gh:active, .show-trmnl:active { transform: none; }
